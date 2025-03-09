@@ -127,7 +127,7 @@ int trapezoid(){
                 }
             case 2:{
                 std::cout << "Enter sides a, b of the base and height h \n>>>";
-                int a, b, h;//SB - side of the base
+                int a, b, h;//a,b - side of the base and h - height
                 scanf("%d %d %d", &a, &b, &h);
                 int area = ((a+b)/2)*h;
                 std::cout << "area of a trapezoid is " << area << "\n##############" << std::endl;
@@ -135,7 +135,7 @@ int trapezoid(){
                 }
             case 3:{
                 std::cout << "Enter sides a and b of the base \n>>>";
-                int a, b;
+                int a, b; //a,b - side of the base and h - height
                 scanf("%d %d", &a, &b);
                 int midle_line = (a+b)/2;
                 std::cout << "midle line of a trapezoid is " << midle_line \
