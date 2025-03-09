@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 
@@ -22,7 +23,7 @@ double lengthDiagonal(double &d, int &a, int &b)  //Функция вычисл�
 }
 
 
-int main(){
+int rectangle(){
 
     int input;
     cout<<"Что вы хотите определить?:"<<endl<<"1)Периметр"<<endl<<"2)Площадь"<<endl<<"3)Длину диагонали"<<endl<<"4)Все вместе"<<endl;
