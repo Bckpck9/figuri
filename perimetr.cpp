@@ -142,10 +142,14 @@ int trapezoid(){
                     << "\n##############" << std::endl;
                 break;
                 }
-             case 4:{
+            case 4:{
                 std::cout << "Exiting the program...\n";
                 return 0; // Выход из программы
-            }
+                }
+             default: {// Обработка неверного ввода
+                std::cout << "Wrong input.\n";
+                break;
+                }   
         }
     }
 }
@@ -159,7 +163,7 @@ int main(){
                 rectangle();
                 break;
                 }
-            case 2:{
+            case 3:{
                 trapezoid();
                 break;
                    }
