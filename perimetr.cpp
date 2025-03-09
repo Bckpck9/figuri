@@ -147,7 +147,7 @@ int trapezoid(){
                 return 0; // Выход из программы
                 }
             default:{ // Обработка неверного ввода
-                std::cout << "Wrong input!".\n";
+                std::cout << "Wrong input!.\n";
                 break;
                 }
         }
