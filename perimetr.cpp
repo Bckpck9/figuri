@@ -161,7 +161,12 @@ int trapezoid(){
                 scanf("%d %d %d %d", &a, &b, &c, &d);
                 if (a<=0 || b<=0 || c<=0 || d<=0 ){
                     std::cout << "Wrong input! sides must be positive!";
-                    break;}
+                    break;
+                } else if (a+b+c<d || a+c+d<b || a+b+d<c || c+d+b<a){
+                    std::cout << "Wrong input! Trapezoid is not existence. \n";
+                    break;
+                    
+                }
                 int perimeter = a+b+c+d;
                 std::cout <<"perimeter of trapezoid is " << perimeter \
                     << "\n##############" << std::endl;
@@ -179,7 +184,7 @@ int trapezoid(){
 
                 std::cout << "area of a trapezoid is " << area << "\n##############" << std::endl;
                 break;
-                }
+                } 
 
             case 3:{
                 std::cout << "Enter sides a and b of the base \n>>>";
