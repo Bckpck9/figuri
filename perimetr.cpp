@@ -142,7 +142,6 @@ int rectangle()
     return 0; // Возврат значения в конце функции
 }
 
-
 //Trapezoid part
 int trapezoid(){
     int option;
@@ -160,23 +159,35 @@ int trapezoid(){
                 std::cout << "Enter all sides \n>>>";
                 int a, b, c, d; //this is sides!
                 scanf("%d %d %d %d", &a, &b, &c, &d);
+                if (a<=0 || b<=0 || c<=0 || d<=0 ){
+                    std::cout << "Wrong input! sides must be positive!";
+                    break;}
                 int perimeter = a+b+c+d;
                 std::cout <<"perimeter of trapezoid is " << perimeter \
                     << "\n##############" << std::endl;
                 break;
                 }
+
             case 2:{
                 std::cout << "Enter sides a, b of the base and height h \n>>>";
                 int a, b, h;//a,b - side of the base and h - height
                 scanf("%d %d %d", &a, &b, &h);
                 int area = ((a+b)/2)*h;
+                if (a<=0 || b<=0 || h<=0){
+                    std::cout << "Wrong input! sides must be positive!";
+                    break;}
+
                 std::cout << "area of a trapezoid is " << area << "\n##############" << std::endl;
                 break;
                 }
+
             case 3:{
                 std::cout << "Enter sides a and b of the base \n>>>";
                 int a, b; //a,b - side of the base and h - height
                 scanf("%d %d", &a, &b);
+                 if (a<=0 || b<=0){
+                    std::cout << "Wrong input! sides must be positive!";
+                    break;} 
                 int midle_line = (a+b)/2;
                 std::cout << "midle line of a trapezoid is " << midle_line \
                     << "\n##############" << std::endl;
@@ -186,10 +197,10 @@ int trapezoid(){
                 std::cout << "Exiting the program...\n";
                 return 0; // Выход из программы
                 }
-            default:{ // Обработка неверного ввода
-                std::cout << "Wrong input!.\n";
+             default: {// Обработка неверного ввода
+                std::cout << "Wrong input.\n";
                 break;
-                }
+                }   
         }
     }
 }
