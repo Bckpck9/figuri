@@ -142,7 +142,8 @@ int rectangle()
     return 0; // Возврат значения в конце функции
 }
 
-//Trapezoid part
+//Trapezoid part for commit
+
 int trapezoid(){
     int option;
 
