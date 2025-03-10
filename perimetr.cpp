@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-int perimetr(int &perimeter, int &a, int &b) // Функция вычисления периметра
+int perimetr(int &perimeter, int &a, int &b) // 11Функция вычисления периметра
     {
     perimeter = 2 * (a + b); // Исправлена формула периметра
     return perimeter;
