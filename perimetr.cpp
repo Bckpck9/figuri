@@ -39,8 +39,18 @@ int rectangle()
         int perimeter;
         cout << "Напишите длину стороны a:" << endl;
         cin >> a;
+        if(a<=0 || b<=0)
+        {
+            cout<<"Ошибка!Введите положительное число\n";
+            break;
+        }
         cout << "Напишите длину стороны b:" << endl;
         cin >> b;
+        if(a<=0 || b<=0)
+        {
+            cout<<"Ошибка!Введите положительное число\n";
+            break;
+        }
         perimetr(perimeter, a, b);
         cout << "Периметр прямоугольника равен: " << perimeter;
         break;
@@ -51,8 +61,18 @@ int rectangle()
         int area;
         cout << "Напишите длину стороны a:" << endl;
         cin >> a;
+        if(a<=0 || b<=0)
+        {
+            cout<<"Ошибка!Введите положительное число\n";
+            break;
+        }
         cout << "Напишите длину стороны b:" << endl;
         cin >> b;
+        if(a<=0 || b<=0)
+        {
+            cout<<"Ошибка!Введите положительное число\n";
+            break;
+        }
         square(area, a, b);
         cout << "Площадь прямоугольника равна: " << area;
         break;
@@ -63,8 +83,18 @@ int rectangle()
         double length;
         cout << "Напишите длину стороны a:" << endl;
         cin >> a;
+        if(a<=0 || b<=0)
+        {
+            cout<<"Ошибка!Введите положительное число\n";
+            break;
+        }
         cout << "Напишите длину стороны b:" << endl;
         cin >> b;
+        if(a<=0 || b<=0)
+        {
+            cout<<"Ошибка!Введите положительное число\n";
+            break;
+        }
         lengthDiagonal(length, a, b);
         cout << "Длина диагонали прямоугольника равна: " << length;
         break; // Добавлен break
@@ -77,8 +107,18 @@ int rectangle()
         double length;
         cout << "Напишите длину стороны a:" << endl;
         cin >> a;
+        if(a<=0 || b<=0)
+        {
+            cout<<"Ошибка!Введите положительное число\n";
+            break;
+        }
         cout << "Напишите длину стороны b:" << endl;
         cin >> b;
+        if(a<=0 || b<=0)
+        {
+            cout<<"Ошибка!Введите положительное число\n";
+            break;
+        }
         perimetr(perimeter, a, b);
         cout << "Периметр прямоугольника равен: " << perimeter << endl;
         square(area, a, b);
